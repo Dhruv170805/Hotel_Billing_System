@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏨 Hotel Billing System
 
 A comprehensive, enterprise-grade hotel and restaurant billing system built with React, featuring real-time analytics, inventory management, and professional bill printing.
@@ -321,3 +322,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Built with ❤️ for the hospitality industry**
 
 **Star ⭐ this repository if you found it helpful!**
+=======
+# Hotel_Billing_System
+Hotel Billing System with payment and bill printing
+>>>>>>> c4c0d7d13256b0a962f50ef30a5d175ffea9761a
