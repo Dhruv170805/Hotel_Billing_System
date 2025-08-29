@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Shreeji - Setup Required</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .steps {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        .step {
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border-left: 4px solid #4CAF50;
+        }
+        .step strong {
+            color: #4CAF50;
+        }
+        .note {
+            background: rgba(255, 193, 7, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #FFC107;
+            margin: 20px 0;
+        }
+        .success {
+            background: rgba(76, 175, 80, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #4CAF50;
+            margin: 20px 0;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid #fff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏨</div>
+        <h1>Hotel Shreeji</h1>
+        <p class="subtitle">Professional Billing & Management System</p>
+        
+        <div class="note">
+            <strong>⚠️ Setup Required</strong><br>
+            This page appears because theRestaurant Shreeji application needs to be built first.
+        </div>
+
+        <div class="steps">
+            <h3>🚀 Quick Setup Steps:</h3>
+            
+            <div class="step">
+                <strong>Step 1:</strong> Install Node.js from <a href="https://nodejs.org" target="_blank">nodejs.org</a>
+            </div>
+            
+            <div class="step">
+                <strong>Step 2:</strong> Close this browser window
+            </div>
+            
+            <div class="step">
+                <strong>Step 3:</strong> Double-click <code>Start-Hotel-Shreeji.bat</code> again
+            </div>
+            
+            <div class="step">
+                <strong>Step 4:</strong> Wait for the application to build (first time only)
+            </div>
+        </div>
+
+        <div class="success">
+            <strong>✅ After Setup:</strong><br>
+           Restaurant Shreeji will open automatically and be ready for daily use!
+        </div>
+
+        <div class="note">
+            <strong>💡 Need Help?</strong><br>
+            Check the <code>README-SETUP.md</code> file for detailed instructions and troubleshooting.
+        </div>
+
+        <script>
+            // Auto-refresh every 10 seconds to check if app is ready
+            setTimeout(() => {
+                window.location.reload();
+            }, 10000);
+
+            // Show loading indicator
+            let loadingDiv = document.createElement('div');
+            loadingDiv.innerHTML = '<div class="spinner"></div><p>Checking forRestaurant Shreeji application...</p>';
+            loadingDiv.style.marginTop = '20px';
+            document.querySelector('.container').appendChild(loadingDiv);
+        </script>
+    </div>
+</body>
+</html>
